@@ -10,6 +10,7 @@ echo -e "${COLOR_CYAN}Eliminando ipv6leakintrf0...${COLOR_NC}"
 
 # Ejecutar comando
 nmcli device delete ipv6leakintrf0
+sudo nmcli connection delete pvpn-ipv6leak-protection
 
 # Mostrar mensaje de confirmación
 echo -e "${COLOR_RED}La interfaz ipv6leakintrf0 ha sido eliminada.${COLOR_NC}"
